@@ -1,0 +1,396 @@
+{
+	"pages": [
+
+		{
+			"path": "pages/index/index",
+			"style": {
+				// #ifdef MP 
+				"navigationBarTitleText": "Dloud商城",
+				//"navigationStyle": "custom",
+				// #endif 
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent",
+						"searchInput": {
+							"backgroundColor": "rgba(231, 231, 231,.7)",
+							"borderRadius": "16px",
+							"placeholder": "请输入地址 如：大钟寺",
+							"disabled": true,
+							"placeholderColor": "#606266"
+						},
+						"buttons": [{
+								"fontSrc": "/static/yticon.ttf",
+								"text": "\ue60d",
+								"fontSize": "26",
+								"color": "#303133",
+								"float": "left",
+								"background": "rgba(0,0,0,0)"
+							},
+							{
+								"fontSrc": "/static/yticon.ttf",
+								"text": "\ue744",
+								"fontSize": "27",
+								"color": "#303133",
+								"background": "rgba(0,0,0,0)",
+								"redDot": true
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/product/product",
+			"style": {
+				"navigationBarTitleText": "详情展示",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		}, {
+			"path": "pages/set/set",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+		},
+
+		{
+			"path": "pages/userinfo/userinfo",
+			"style": {
+				"navigationBarTitleText": "修改资料"
+			}
+		}, {
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		}, {
+			"path": "pages/public/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "slide-in-bottom"
+				}
+			}
+		}, {
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				// #ifdef MP
+				"navigationStyle": "custom",
+				// #endif
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"type": "transparent",
+						"buttons": [{
+								"fontSrc": "/static/yticon.ttf",
+								"text": "\ue60f",
+								"fontSize": "24",
+								"color": "#303133",
+								"width": "46px",
+								"background": "rgba(0,0,0,0)"
+							},
+							{
+								"fontSrc": "/static/yticon.ttf",
+								"text": "\ue744",
+								"fontSize": "28",
+								"color": "#303133",
+								"background": "rgba(0,0,0,0)",
+								"redDot": true
+							}
+						]
+					}
+				}
+			}
+		}, {
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		}, {
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		}, {
+			"path": "pages/money/money",
+			"style": {}
+		}, {
+			"path": "pages/order/createOrder",
+			"style": {
+				"navigationBarTitleText": "创建订单"
+			}
+		}, {
+			"path": "pages/address/address",
+			"style": {
+				"navigationBarTitleText": "收货地址"
+			}
+		}, {
+			"path": "pages/address/addressManage",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "pages/money/pay",
+			"style": {
+				"navigationBarTitleText": "支付"
+			}
+		},
+		{
+			"path": "pages/money/paySuccess",
+			"style": {
+				"navigationBarTitleText": "支付成功"
+			}
+		}
+	    ,{
+            "path" : "pages/notice/notice",
+            "style" : {
+				"navigationBarTitleText": "通知"
+			}
+        }
+        ,{
+            "path" : "pages/category/category",
+            "style" : {
+				"navigationBarTitleText": "分类",
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/product/list",
+            "style" : {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "商品列表"
+			}
+        }
+        ,{
+            "path" : "pages/demo/demo",
+            "style" : {}
+        }, {
+			"path": "pages/mine/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "slide-in-bottom"
+				}
+			}
+		}
+        ,{
+            "path" : "pages/index/play-video",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/index/play-web",
+            "style" : {}
+        },
+		{
+		    "path": "pages/mine/reg",
+		    "style": {
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		},
+   
+        {
+        	"path": "pages/index/index-index",
+        	"style": {
+        		"navigationBarTitleText":"",
+        		"navigationBarBackgroundColor":"white",
+        		// "enablePullDownRefresh":true,
+        		"app-plus":{
+        			"scrollIndicator":"nonoe",     //隐藏滚动条
+        			"bounce":"none",   //关闭反弹效果	
+        			"titleNView":{
+        				// "type": "transparent",
+        				"searchInput":{
+        					"align":"center",
+        					"backgroundColor": "rgba(231,231,231,0.4)",
+        					"borderRadius":"4px",
+        					"placeholder":"您感兴趣的内容！",       //提示框内容
+        					"placeholderColor": "#606266"  , 
+        					"disabled":true       //是否可以输入内容
+        				},
+        				"buttons":[
+        					{	
+        						"text":"北京",
+        						"fontSize":"14",
+        						"select":true,
+        						"width":"auto",
+        						"float":"left",
+        						"background": "rgba(0,0,0,0)",
+        						"color": "#303133"
+        					},
+        					{  
+        						"text":"\ue61f", 
+        						"fontSize" : "20",  
+        						"redDot" : true,
+        						"float":"right",
+        						"colorPredssed":"#BBBBBB",
+        						"fontWeight":"bold",
+        						"fontSrc":"/static/font/iconfont.ttf"
+        					}
+        				]
+        			}
+        		}
+        	}
+        },
+		{
+		    "path" : "pages/search/search",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/column/column-info",
+		    "style" : {}
+		}
+        ,{
+            "path" : "pages/friend-link/open-zhibo",
+            "style" : {}
+        },
+		{
+		    "path" : "pages/celebrity/celebrity",
+		    "style" : {}
+		},
+		{
+		    "path": "pages/mine/blog",
+		    "style": {
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		},
+		{
+		    "path" : "pages/mine/user-set",
+		    "style" : {
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		},
+		{
+		    "path" : "pages/mine/user-set-email",
+		    "style" : {}
+		}
+		,{
+		    "path" : "pages/mine/user-set-help",
+		    "style" : {}
+		}
+		,{
+		    "path" : "pages/mine/user-set-password",
+		    "style" : {}
+		}
+		,{
+		    "path" : "pages/mine/user-set-info",
+		    "style" : {}
+		}
+		,{
+		    "path" : "pages/mine/user-set-space",
+		    "style" : {}
+		}
+		,{
+		    "path" : "pages/mine/user-set-about",
+		    "style" : {}
+		},
+		{
+			"path": "pages/news-cmt-reply/news-cmt-reply",
+			"style": {
+				"navigationBarTitleText": "回复",
+				"backgroundColorTop": "#fff",
+				"backgroundColorBottom": "#fff",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 0
+			}
+		}, {
+			"path": "pages/news-cmt-list/news-cmt-list",
+			"style": {
+				"navigationBarTitleText": "评论",
+				"backgroundColorTop": "#fff",
+				"backgroundColorBottom": "#fff",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 0
+			}
+		}
+		
+        ,{
+            "path" : "pages/common/common-video-content",
+            "style": {
+            	"titleNView":false
+            }
+        },
+		{
+			"path": "pages/components/selectCity",
+			"style": {
+				"navigationBarTitleText": "城市选择",
+				"disableScroll": true,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#C0C4CC",
+		"selectedColor": "#fa436a",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text":"精选",
+				"iconPath":"static/DownNavigationBar/jingxuan1.png",
+				"selectedIconPath":"static/DownNavigationBar/jingxuan2.png"
+			},
+			{
+					"pagePath": "pages/index/index-index",
+					"text":"主页",
+					"iconPath":"static/DownNavigationBar/shouye1.png",
+					"selectedIconPath":"static/DownNavigationBar/shouye2.png"
+			},
+			{
+				"pagePath": "pages/category/category",
+				"iconPath": "static/tab-cate.png",
+				"selectedIconPath": "static/tab-cate-current.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/tab-cart.png",
+				"selectedIconPath": "static/tab-cart-current.png",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text":"个人中心",
+				"iconPath":"static/DownNavigationBar/gerenzhongxin1.png",
+				"selectedIconPath":"static/DownNavigationBar/gerenzhongxin2.png"
+			},
+			{
+				"pagePath":"pages/demo/demo",  //页面路径
+				"text":"演示",
+				"iconPath":"static/logo.jpg",
+				"selectedIconPath":"static/logo.jpg"
+			}
+		]
+	}
+}
